@@ -33,7 +33,7 @@ func TestAzureResources(t *testing.T) {
 		got  string
 		want int
 	}{
-		{"created", planResult[1], 14},
+		{"created", planResult[1], 13},
 		{"changed", planResult[2], 0},
 		{"destroyed", planResult[3], 0},
 	}

@@ -19,5 +19,9 @@ output "public_subnet" {
 }
 
 output "resource_group" {
-	value = azurerm_resource_group.this
+  value = azurerm_resource_group.this
+}
+
+output "subscription_id" {
+  value = data.azurerm_client_config.current.subscription_id
 }

@@ -31,7 +31,7 @@ output "key_vault_name" {
 }
 
 output "subscription_id" {
-  value = local.subscription_id
+  value = module.databricks.subscription_id
 }
 
 output "resource_group_name" {
